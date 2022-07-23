@@ -6,6 +6,14 @@ public class Product {
 	public double preco;
 	public int quantidade;
 	
+	//* os nomes abaixo podem ser diferentes dos de acima, mas por convenção utiliza-se os mesmos *//
+	
+	public Product(String nome, double preco, int quantidade) {
+		this.nome = nome;
+		this.preco = preco;
+		this.quantidade = quantidade;
+	}
+	
 	public double totalValueInStock() {
 		return preco * quantidade;
 	}
